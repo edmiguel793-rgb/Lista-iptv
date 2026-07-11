@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>📺 Meu IPTV</title>
+    <!-- Importa o HLS.js para reproduzir streams .m3u8 -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #0b0e14;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: #141a24;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h1 small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #8899bb;
+            margin-left: auto;
+        }
+        /* Player de vídeo */
+        .player-wrapper {
+            position: relative;
+            background: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            margin-bottom: 25px;
+            border: 1px solid #2a3346;
+        }
+        #videoPlayer {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #000;
+        }
+        /* Barra de status */
+        #status {
+            padding: 10px 16px;
+            background: #1f2838;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            color: #aab9d6;
+            text-align: center;
+            border-left: 4px solid #3b82f6;
+        }
+        #status span {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Lista de canais */
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        .channel-card {
+            background: #1c2536;
+            border-radius: 14px;
+            padding: 14px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .channel-card:hover {
+            background: #26324a;
+            transform: scale(1.03);
+            border-color: #3b82f6;
+        }
+        .channel-card.active {
+            border-color: #3b82f6;
+            background: #1e2a44;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        .channel-card img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: #0b0e14;
+            padding: 4px;
+        }
+        .channel-card .name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #d6e2f5;
+            line-height: 1.2;
+        }
+        .channel-card .badge {
+            font-size: 0.65rem;
+            background: #2a3a55;
+            padding: 2px 10px;
+            border-radius: 20px;
+            color: #90b0f0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .channel-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>
+        📺 IPTV Player
+        <small>GitHub Host</small>
+    </h1>
+
+    <!-- Player -->
+    <div class="player-wrapper">
+        <video id="videoPlayer" controls playsinline></video>
+    </div>
+
+    <!-- Status -->
+    <div id="status">
+        ⚡ Clique num canal abaixo para começar a assistir
+    </div>
+
+    <!-- Lista de canais (adicione/edite aqui) -->
+    <div class="channel-grid" id="channelList">
+        <!-- Os canais serão inseridos via JavaScript -->
+    </div>
+</div>
+
+<script>
+    // ================================================================
+    // 🟢 COLOQUE AQUI OS SEUS CANAIS (adicione quantos quiser)
+    // ================================================================
+    const channels = [
+        {
+            name: "SPORT TV 1",
+            logo: "https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png",
+            url: "https://4e4e53aa080247bc31d0eb4e7aeb07a0.cazetv.shop/embedtv/0904be0fb49a0cadde4ab481e8619393/file.txt"
+        }
+        // 👇 Exemplo para adicionar mais canais:
+        // {
+        //     name: "SPORT TV 2",
+        //     logo: "https://link-da-sua-imagem.png",
+        //     url: "https://link-do-stream.m3u8"
+        // }
+    ];
+    // ================================================================
+
+    // --- Elementos DOM ---
+    const video = document.getElementById('videoPlayer');
+    const statusDiv = document.getElementById('status');
+    const channelListDiv = document.getElementById('channelList');
+
+    // --- Variável do HLS ---
+    let hls = null;
+
+    // --- Função para carregar o stream ---
+    function loadChannel(channel) {
+        // Atualiza status
+        statusDiv.innerHTML = `📡 A carregar: <span>${channel.name}</span> ...`;
+
+        // Se já existir HLS, destrói para carregar novo
+        if (hls) {
+            hls.destroy();
+            hls = null;
+        }
+
+        const streamUrl = channel.url;
+
+        // Verifica se o navegador suporta HLS nativamente (Safari)
+        if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = streamUrl;
+            video.play().catch(err => {
+                statusDiv.innerHTML = `❌ Erro ao reproduzir: ${err.message}`;
+            });
+            statusDiv.innerHTML = `▶️ A reproduzir: <span>${channel.name}</span> (nativo)`;
+            return;
+        }
+
+        // Usa hls.js para os demais navegadores (Chrome, Firefox, Edge, etc.)
+        if (Hls.isSupported()) {
+            hls = new Hls({
+                enableWorker: true,
+                lowLatencyMode: true,
+            });
+
+            hls.loadSource(streamUrl);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                video.play().catch(err => {
+                    statusDiv.innerHTML = `⚠️ Clique no play para iniciar: ${channel.name}`;
+                });
+                statusDiv.innerHTML = `▶️ A reproduzir: <span>${channel.name}</span>`;
+            });
+
+            hls.on(Hls.Events.ERROR, (event, data) => {
+                if (data.fatal) {
+                    statusDiv.innerHTML = `❌ Erro no stream: ${channel.name}. Pode estar offline.`;
+                }
+            });
+        } else {
+            statusDiv.innerHTML = `❌ Seu navegador não suporta reprodução HLS.`;
+        }
+
+        // Atualiza destaque na lista
+        document.querySelectorAll('.channel-card').forEach(card => {
+            card.classList.remove('active');
+            if (card.dataset.name === channel.name) {
+                card.classList.add('active');
+            }
+        });
+    }
+
+    // --- Renderizar a lista de canais ---
+    function renderChannels() {
+        channelListDiv.innerHTML = '';
+        channels.forEach(ch => {
+            const card = document.createElement('div');
+            card.className = 'channel-card';
+            card.dataset.name = ch.name;
+
+            card.innerHTML = `
+                <img src="${ch.logo}" alt="${ch.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/55/141a24/3b82f6?text=TV'">
+                <span class="name">${ch.name}</span>
+                <span class="badge">LIVE</span>
+            `;
+
+            card.addEventListener('click', () => {
+                loadChannel(ch);
+            });
+
+            channelListDiv.appendChild(card);
+        });
+
+        // Se houver canais, carrega o primeiro automaticamente
+        if (channels.length > 0) {
+            // Aguarda um pequeno delay para garantir que o DOM renderizou
+            setTimeout(() => {
+                loadChannel(channels[0]);
+            }, 300);
+        }
+    }
+
+    // --- Iniciar ---
+    renderChannels();
+</script>
+
+</body>
+</html>
