@@ -44,7 +44,6 @@
             color: #8899bb;
             margin-left: auto;
         }
-        /* Player de vídeo */
         .player-wrapper {
             position: relative;
             background: #000;
@@ -61,7 +60,6 @@
             display: block;
             background: #000;
         }
-        /* Barra de status */
         #status {
             padding: 10px 16px;
             background: #1f2838;
@@ -76,8 +74,6 @@
             color: #fff;
             font-weight: 600;
         }
-
-        /* Lista de canais */
         .channel-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -127,8 +123,6 @@
             border-radius: 20px;
             color: #90b0f0;
         }
-
-        /* Responsivo */
         @media (max-width: 600px) {
             .channel-grid {
                 grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -140,32 +134,18 @@
     </style>
 </head>
 <body>
-
 <div class="container">
-    <h1>
-        📺 IPTV Player
-        <small>GitHub Host</small>
-    </h1>
-
-    <!-- Player -->
+    <h1>📺 IPTV Player <small>GitHub Host</small></h1>
     <div class="player-wrapper">
         <video id="videoPlayer" controls playsinline></video>
     </div>
-
-    <!-- Status -->
-    <div id="status">
-        ⚡ Clique num canal abaixo para começar a assistir
-    </div>
-
-    <!-- Lista de canais (adicione/edite aqui) -->
-    <div class="channel-grid" id="channelList">
-        <!-- Os canais serão inseridos via JavaScript -->
-    </div>
+    <div id="status">⚡ Clique num canal abaixo para começar a assistir</div>
+    <div class="channel-grid" id="channelList"></div>
 </div>
 
 <script>
     // ================================================================
-    // 🟢 LISTA DE CANAIS ATUALIZADA (SPORT TV 1 e SPORT TV 2)
+    // 🟢 LISTA DE CANAIS ATUALIZADA (SPORT TV 1, 2 e 3)
     // ================================================================
     const channels = [
         {
@@ -175,35 +155,28 @@
         },
         {
             name: "SPORT TV 2",
-            logo: "https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png", // Pode trocar por uma logo específica se quiser
+            logo: "https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png",
             url: "https://4e4e53aa080247bc31d0eb4e7aeb07a0.cazetv.shop/embedtv/632ee02c4bb33227b21fe6e8af6a404b/file.txt"
+        },
+        {
+            name: "SPORT TV 3",
+            logo: "https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png",
+            url: "https://5n341gm2j8ya.24841253.net:8443/hls/twoonydindfqa.m3u8?s=wK8b1xD1OMRMaZHAKJqRgA&e=1783860334"
         }
-        // 👇 Adicione mais canais seguindo este formato:
-        // {
-        //     name: "SPORT TV 3",
-        //     logo: "https://link-da-imagem.png",
-        //     url: "https://link-do-stream.m3u8"
-        // }
     ];
     // ================================================================
 
-    // --- Elementos DOM ---
     const video = document.getElementById('videoPlayer');
     const statusDiv = document.getElementById('status');
     const channelListDiv = document.getElementById('channelList');
-
-    // --- Variável do HLS ---
     let hls = null;
 
-    // --- Função para carregar o stream ---
     function loadChannel(channel) {
         statusDiv.innerHTML = `📡 A carregar: <span>${channel.name}</span> ...`;
-
         if (hls) {
             hls.destroy();
             hls = null;
         }
-
         const streamUrl = channel.url;
 
         if (video.canPlayType('application/vnd.apple.mpegurl')) {
@@ -216,21 +189,15 @@
         }
 
         if (Hls.isSupported()) {
-            hls = new Hls({
-                enableWorker: true,
-                lowLatencyMode: true,
-            });
-
+            hls = new Hls({ enableWorker: true, lowLatencyMode: true });
             hls.loadSource(streamUrl);
             hls.attachMedia(video);
-
             hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                video.play().catch(err => {
+                video.play().catch(() => {
                     statusDiv.innerHTML = `⚠️ Clique no play para iniciar: ${channel.name}`;
                 });
                 statusDiv.innerHTML = `▶️ A reproduzir: <span>${channel.name}</span>`;
             });
-
             hls.on(Hls.Events.ERROR, (event, data) => {
                 if (data.fatal) {
                     statusDiv.innerHTML = `❌ Erro no stream: ${channel.name}. Pode estar offline.`;
@@ -248,37 +215,26 @@
         });
     }
 
-    // --- Renderizar a lista de canais ---
     function renderChannels() {
         channelListDiv.innerHTML = '';
         channels.forEach(ch => {
             const card = document.createElement('div');
             card.className = 'channel-card';
             card.dataset.name = ch.name;
-
             card.innerHTML = `
                 <img src="${ch.logo}" alt="${ch.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/55/141a24/3b82f6?text=TV'">
                 <span class="name">${ch.name}</span>
                 <span class="badge">LIVE</span>
             `;
-
-            card.addEventListener('click', () => {
-                loadChannel(ch);
-            });
-
+            card.addEventListener('click', () => loadChannel(ch));
             channelListDiv.appendChild(card);
         });
-
         if (channels.length > 0) {
-            setTimeout(() => {
-                loadChannel(channels[0]);
-            }, 300);
+            setTimeout(() => loadChannel(channels[0]), 300);
         }
     }
 
-    // --- Iniciar ---
     renderChannels();
 </script>
-
 </body>
 </html>
