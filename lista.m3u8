@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png" group-title="Desporto",SPORT TV 1
+#EXTINF:-1 tvg-logo="" group-title="Desporto",SPORT TV 1
 https://4e4e53aa080247bc31d0eb4e7aeb07a0.cazetv.shop/embedtv/0904be0fb49a0cadde4ab481e8619393/file.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png" group-title="Desporto",SPORT TV 2
+#EXTINF:-1 tvg-logo="" group-title="Desporto",SPORT TV 2
 https://4e4e53aa080247bc31d0eb4e7aeb07a0.cazetv.shop/embedtv/632ee02c4bb33227b21fe6e8af6a404b/file.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/4/4f/SportTV_logo.png" group-title="Desporto",SPORT TV 3
-https://5n341gm2j8ya.24841253.net:8443/hls/twoonydindfqa.m3u8?s=wK8b1xD1OMRMaZHAKJqRgA&e=1783860334
+#EXTINF:-1 tvg-logo="" group-title="Desporto",SPORT TV 3
+https://5n341gm2j8ya.24841253.net:8443/hls/twoonydindfqa.m3u8?s=F5Kw_9pn2J3CPVPHM6dVJg&e=1783861425
