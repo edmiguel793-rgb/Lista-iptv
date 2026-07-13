@@ -27,5 +27,5 @@ https://f93882cbd8fc7fb794c1011d63be6fb6.cazetv.shop/embedtv/43acc4f308ff806e936
 https://f93882cbd8fc7fb794c1011d63be6fb6.cazetv.shop/embedtv/293404363653940175daa138623a7b7e/file.txt
 #EXTINF:-1 group-title="Notícias Portugal",CNN Portugal
 https://video-auth6.iol.pt/live_cnn/live_cnn/edge_servers/cnn-480p/chunks.m3u8?nimblesessionid=2953630541&wmsAuthSign=c2VydmVyX3RpbWU9Ny8xMy8yMDI2IDE6MTY6MzEgUE0maGFzaF92YWx1ZT04ODFCdHV1c3Rnc3lBQ2tqRU8zcTVRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9YWU0Mjk1ODktMzU3Mi00NGViLThhYzAtMzE4ZjA4ODk2ZTFj
-#EXTINF:-1 group-title="Portugal",RTP 1Android
+#EXTINF:-1 group-title="Portugal",RTP 1AndroidIOS
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8?tk=1783998000_38efd067c7224bc742a82ce83457487220dfd046
