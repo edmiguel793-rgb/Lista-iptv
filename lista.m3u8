@@ -33,8 +33,6 @@ https://6211080fa89981f66b1a0c9d55c61d0f.cazetv.shop/embedtv/0223a36fc317a7c7a8b
 https://4dcf435435894a4d0972046fc566af76.cazetv.shop/embedtv/144fc84270a3b81ed8c9cb8bedb55e2d/file.txt
 #EXTINF:-1 group-title="Filmes",Disney Plus
 https://77369e37b2aa1404f416275183ab055f.cazetv.shop/embedtv/ce2563060224493abd5745d7cb59442f/file.txt
-#EXTINF:-1 group-title="Notícias Portugal",CNN Portugal
-https://video-auth6.iol.pt/live_cnn/live_cnn/edge_servers/cnn-480p/chunks.m3u8?nimblesessionid=2953630541&wmsAuthSign=c2VydmVyX3RpbWU9Ny8xMy8yMDI2IDE6MTY6MzEgUE0maGFzaF92YWx1ZT04ODFCdHV1c3Rnc3lBQ2tqRU8zcTVRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9YWU0Mjk1ODktMzU3Mi00NGViLThhYzAtMzE4ZjA4ODk2ZTFj
 #EXTINF:-1 group-title="Portugal",RtpAndroidIOS
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8?tk=1783998000_38efd067c7224bc742a82ce83457487220dfd046
 #EXTINF:-1 group-title="série",bob esponja
