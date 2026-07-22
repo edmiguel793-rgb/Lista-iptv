@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="Desporto",SPORT TV 1
-https://02f039058bd48307e6f653a2005c9dd2.cazetv.shop/embedtv/8d1782b88ccafde5d51d102549d0ad2f/file.txt
+http://94.130.32.19:8080/sporttv1/index.m3u8
 #EXTINF:-1 group-title="Desporto",SPORT TV 2
 https://02f039058bd48307e6f653a2005c9dd2.cazetv.shop/embedtv/28563358e1284253638838089659f0b7/file.txt
 #EXTINF:-1 group-title="Desporto",SPORT TV 3
