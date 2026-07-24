@@ -45,3 +45,5 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8?tk=178
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62545c0b002f4b0007688b61/640930/playlist.m3u8?sid=cd9ccf55-82b1-11f1-a582-4271a6c22473&deviceId=29fc3f4b-ce67-4e55-89e2-c0c43d03f866&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImNjNTAyZDU0LWJkNzAtNDVhOC1hMDcwLWE4MmY0N2UxZTcyNSIsInR5cCI6IkpXVCJ9
 #EXTINF:-1 group-title="filme cine",Super Mário Galaxy
 https://edge1-vienna-sprintcdn.owphbf24.com/hls2/03/11311/g8k475uy3kkp_x/master.m3u8?t=0xh8j2hfrBkKeONg7wDK--s0rLmYAHNzpqThMPGiq3c&s=1784904462&e=10800&f=56557944&srv=1065&asn=&sp=5500&p=0
+#EXTINF:-1 group-title="filme cine",Toy Story 5
+https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/09/11620/3pbttlnahzis_x/master.m3u8?t=TFPgAiL7P-wyx3APbL1kYGXRSfiZxjYWnpHesvdxpIM&s=1784905652&e=10800&f=58101050&srv=1060&asn=&sp=5500&p=0
