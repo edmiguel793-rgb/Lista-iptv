@@ -47,3 +47,5 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channe
 https://edge1-vienna-sprintcdn.owphbf24.com/hls2/03/11311/g8k475uy3kkp_x/master.m3u8?t=0xh8j2hfrBkKeONg7wDK--s0rLmYAHNzpqThMPGiq3c&s=1784904462&e=10800&f=56557944&srv=1065&asn=&sp=5500&p=0
 #EXTINF:-1 group-title="filme cine",Toy Story 5
 https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/09/11620/3pbttlnahzis_x/master.m3u8?t=TFPgAiL7P-wyx3APbL1kYGXRSfiZxjYWnpHesvdxpIM&s=1784905652&e=10800&f=58101050&srv=1060&asn=&sp=5500&p=0
+#EXTINF:-1 group-title="Futebol Brasil",Premiere Brasil
+https://redecanaistv.vision/player3/ch.php?canal=premiereclubes
