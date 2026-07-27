@@ -41,8 +41,8 @@ https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/5607b0843d98210810a
 https://video-auth6.iol.pt/live_cnn/live_cnn/edge_servers/cnn-480p/chunks.m3u8?nimblesessionid=2953630541&wmsAuthSign=c2VydmVyX3RpbWU9Ny8xMy8yMDI2IDE6MTY6MzEgUE0maGFzaF92YWx1ZT04ODFCdHV1c3Rnc3lBQ2tqRU8zcTVRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9YWU0Mjk1ODktMzU3Mi00NGViLThhYzAtMzE4ZjA4ODk2ZTFj
 #EXTINF:-1 group-title="Portugal",RtpAndroidIOS
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8?tk=1783998000_38efd067c7224bc742a82ce83457487220dfd046
-#EXTINF:-1 group-title="série",bob esponja
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62545c0b002f4b0007688b61/640930/playlist.m3u8?sid=cd9ccf55-82b1-11f1-a582-4271a6c22473&deviceId=29fc3f4b-ce67-4e55-89e2-c0c43d03f866&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImNjNTAyZDU0LWJkNzAtNDVhOC1hMDcwLWE4MmY0N2UxZTcyNSIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="série",bob esponja série 1
+http://192.168.1.65:8766/hls/5d064938dc83417f5f5296f05b605478.m3u8
 #EXTINF:-1 group-title="filme cine",Super Mário Galaxy
 https://edge1-vienna-sprintcdn.owphbf24.com/hls2/03/11311/g8k475uy3kkp_x/master.m3u8?t=0xh8j2hfrBkKeONg7wDK--s0rLmYAHNzpqThMPGiq3c&s=1784904462&e=10800&f=56557944&srv=1065&asn=&sp=5500&p=0
 #EXTINF:-1 group-title="filme cine",Toy Story 5
