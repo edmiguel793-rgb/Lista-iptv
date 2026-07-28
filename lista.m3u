@@ -2,13 +2,13 @@
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Desporto",SPORT TV 1
 http://94.130.32.19:8080/sporttv1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 2
-https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/63d129bdda02e4734a4ccc9ed1e86f9c/file.txt
+http://94.130.32.19:8080/sporttv2/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 3
-https://97416ac0f58056947e2eb5d5d253d4f2.cazetv.shop/embedtv/20355e31d70b84b9058319d43af7748a/file.txt
+http://94.130.32.19:8080/sporttv3/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 4
-https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/daa4fc7df1ae8227bf6b46200e43265d/file.txt
+http://94.130.32.19:8080/sporttv4/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 5
-https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/a3a4017acc4d64522d162a7ecc5fbeb4/file.txt
+http://94.130.32.19:8080/sporttv5/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 6
 https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/c4e3d29f1966caab22e6298607c19351/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 7
