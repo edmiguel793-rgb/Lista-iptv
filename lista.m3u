@@ -16,15 +16,15 @@ https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/18445507f155f9b3079
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",sport TV 1 HD
 https://tvdesporto.live/play.php?canal=sporttv&height=400&width=600
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 1
-https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/1056a04ea08e07d0f0be3d9edb749ecb/file.txt
+http://94.130.32.19:8080/dazn1/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 2
-https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/7d276e03f91e7dbf76bae0d59de8a31f/file.txt
+http://94.130.32.19:8080/dazn2/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 3
-https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/4ba1c1e5076d878ab204e552601b82af/file.txt
+http://94.130.32.19:8080/dazn3/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 4
-https://v2.rdse.site/dazn4
+http://94.130.32.19:8080/dazn4/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 5
-https://cdn.bluetier.top/ELEVEN5/index.m3u8?token=RUxFVkVONXxub19jaGVja19pcHwxNzg0ODI4MTMz.12c186bf7317b2ee2c08e9af2a8115fd4c73f60810378c25cffa3031ac34ae21
+http://94.130.32.19:8080/dazn5/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/benficatv.png" group-title="Desporto",BENFICA TV
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/5d10e81b54315f6d1df7355849bd8a55/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/canal11.png" group-title="Desporto",CANAL 11
