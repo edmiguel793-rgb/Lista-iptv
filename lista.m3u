@@ -16,7 +16,7 @@ https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/18445507f155f9b3079
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",sport TV 1 HD
 https://tvdesporto.live/play.php?canal=sporttv&height=400&width=600
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 1
-http://94.130.32.19:8080/dazn1/index.m3u8
+https://c7558e9d1f956b016d1fdba7ea132378.cazetv.shop/embedtv/1056a04ea08e07d0f0be3d9edb749ecb/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 2
 http://94.130.32.19:8080/dazn2/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 3
