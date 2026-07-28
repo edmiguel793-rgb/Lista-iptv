@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Desporto",SPORT TV 1
-https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/7c580be0839a5a63390da0a55a239d63/file.txt
+http://94.130.32.19:8080/sporttv1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 2
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/63d129bdda02e4734a4ccc9ed1e86f9c/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 3
