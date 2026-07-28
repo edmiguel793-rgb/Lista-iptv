@@ -42,7 +42,7 @@ https://video-auth6.iol.pt/live_cnn/live_cnn/edge_servers/cnn-480p/chunks.m3u8?n
 #EXTINF:-1 group-title="Portugal",RtpAndroidIOS
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8?tk=1783998000_38efd067c7224bc742a82ce83457487220dfd046
 #EXTINF:-1 group-title="série",bob esponja série 1
-https://xn--kcksk7a2bl5le7b6doc1h3f.com/cdn/hls/3c2ff44e7e71574b60bfa03fd8086cff/master.txt
+http://192.168.1.65:30001/file/ixP06WBG/video.mp4
 #EXTINF:-1 group-title="filme cine",Super Mário Galaxy
 https://edge1-vienna-sprintcdn.owphbf24.com/hls2/03/11311/g8k475uy3kkp_x/master.m3u8?t=0xh8j2hfrBkKeONg7wDK--s0rLmYAHNzpqThMPGiq3c&s=1784904462&e=10800&f=56557944&srv=1065&asn=&sp=5500&p=0
 #EXTINF:-1 group-title="filme cine",Toy Story 5
