@@ -23,7 +23,7 @@ https://c7558e9d1f956b016d1fdba7ea132378.cazetv.shop/embedtv/7d276e03f91e7dbf76b
 https://c7558e9d1f956b016d1fdba7ea132378.cazetv.shop/embedtv/4ba1c1e5076d878ab204e552601b82af/file.txt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/DAZN_4.png" group-title="Desporto",DAZN 4
 http://94.130.32.19:8080/dazn4/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 5
+#EXTINF:-1 tvg-logo="https://image.discovery.indazn.com/eu/v3/eu/none/1xi1dh83i1tl018kl25a3phsr2_image-header_pRow_1730196870000/fill/center/top/none/80/896/516/webp/image?brand=dazn" group-title="Desporto",DAZN 5
 http://94.130.32.19:8080/dazn5/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/benficatv.png" group-title="Desporto",BENFICA TV
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/5d10e81b54315f6d1df7355849bd8a55/file.txt
