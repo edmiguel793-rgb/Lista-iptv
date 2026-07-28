@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Desporto",SPORT TV 1
 http://94.130.32.19:8080/sporttv1/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 2
-http://94.130.32.19:8080/sporttv2/index.m3u8
+http://94.130.32.19:8080/sporttv2/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 3
 http://94.130.32.19:8080/sporttv3/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3p6WJ4b.png" group-title="Desporto",SPORT TV 4
@@ -24,7 +24,7 @@ http://94.130.32.19:8080/dazn3/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 4
 http://94.130.32.19:8080/dazn4/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DZNlogo.png" group-title="Desporto",DAZN 5
-http://94.130.32.19:8080/dazn5/index.m3u8
+http://94.130.32.19:8080/dazn5/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/benficatv.png" group-title="Desporto",BENFICA TV
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/5d10e81b54315f6d1df7355849bd8a55/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/canal11.png" group-title="Desporto",CANAL 11
