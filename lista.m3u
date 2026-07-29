@@ -27,7 +27,7 @@ http://94.130.32.19:8080/dazn4/index.m3u8
 http://94.130.32.19:8080/dazn5/mono.m3u8
 #EXTINF:-1 tvg-logo="https://media.slbenfica.pt/-/media/benficadp/images/agora/btv/generic-content/generic-content-mobile.jpg?h=350&w=390&v=638356407330000000&hash=E1217E22077DB7A0ABAFFA1ABC65CEE8" group-title="Desporto",BENFICA TV
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/5d10e81b54315f6d1df7355849bd8a55/file.txt
-#EXTINF:-1 tvg-logo="https://www.canal11.pt/images/customer/logo.png" group-title="Desporto",CANAL 11
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_Canal_11_FPF.svg" group-title="Desporto",CANAL 11
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/a94fae08f397f55ecb917680b42ae289/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/sonychannels.png" group-title="Filmes",Sony Channels
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/51924ea221e890efae5a49f7f6d47ebc/file.txt
