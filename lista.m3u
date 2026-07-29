@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Desporto",SPORT TV 1
+#EXTINF:-1 tvg-logo="https://epg.iptvx.one/picons/sporttv1-pt.png" group-title="Desporto",SPORT TV 1
 http://94.130.32.19:8080/sporttv1/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/20/Sport_TV2_%282023%29.svg" group-title="Desporto",SPORT TV 2
 http://94.130.32.19:8080/sporttv2/mono.m3u8
