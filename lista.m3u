@@ -9,7 +9,7 @@ http://94.130.32.19:8080/sporttv3/index.m3u8
 http://94.130.32.19:8080/sporttv4/index.m3u8
 #EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/ldsp6c1700902696.png" group-title="Desporto",SPORT TV 5
 http://94.130.32.19:8080/sporttv5/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/74/Sport_TV6_%282023%29.svg" group-title="Desporto",SPORT TV 6
+#EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/1ajyjo1700902708.png" group-title="Desporto",SPORT TV 6
 https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/c4e3d29f1966caab22e6298607c19351/file.txt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f3/Sport_TV7_%282024%29.png" group-title="Desporto",SPORT TV 7
 https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/18445507f155f9b3079e866d59052d5c/file.txt
