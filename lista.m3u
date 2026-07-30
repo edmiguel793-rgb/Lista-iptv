@@ -53,3 +53,5 @@ https://65f2a94c8c2d56d5b43a1a3d9d811102.cazetv.shop/embedtv/fd83ba3eb6e70c9602f
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/1e2d49569efbeef50bddc3796d63b7e6/file.txt
 #EXTINF:-1 tvg-logo="https://i.imgur.com/premiere.png" group-title="Futebol Brasil",Premiere 3 Brasil
 https://765d5fb115a9f6a3e0b23b80a5b2e4c4.cazetv.shop/embedtv/3ccc9bc90194f9ab137d8af820ea6c06/file.txt
+#EXTINF:-1 tvg-logo="" group-title="filme cine",Homem Aranha Hoje em dia
+http://192.168.1.65:8766/hls/a05f4d6d6fd32a7f015abac1ff636654.m3u8
