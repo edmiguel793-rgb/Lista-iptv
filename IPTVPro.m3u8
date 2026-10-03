@@ -14,15 +14,15 @@ https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f3/Sport_TV7_%282024%29.png" group-title="Desporto",SPORT TV 7
 https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_sportv7.txt
 #EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/pcmt111657045725.png" group-title="Desporto",DAZN 1
-http://94.130.32.19:8080/dazn1/index.m3u8
+https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_eleven1.txt
 #EXTINF:-1 tvg-logo="https://epg.iptvx.one/picons/eleven-sport2-pt.png" group-title="Desporto",DAZN 2
-http://94.130.32.19:8080/dazn2/index.m3u8
+https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_eleven2.txt
 #EXTINF:-1 tvg-logo="https://jungle-team.com/nuevos-picon-dazn-3-y-dazn-4-actualizacion-font/dazn3black/" group-title="Desporto",DAZN 3
-http://94.130.32.19:8080/dazn3/index.m3u8
+https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_eleven3.txt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/DAZN_4.png" group-title="Desporto",DAZN 4
-http://94.130.32.19:8080/dazn4/index.m3u8
+https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_eleven4.txt
 #EXTINF:-1 tvg-logo="https://image.discovery.indazn.com/eu/v3/eu/none/1xi1dh83i1tl018kl25a3phsr2_image-header_pRow_1730196870000/fill/center/top/none/80/896/516/webp/image?brand=dazn" group-title="Desporto",DAZN 5
-http://94.130.32.19:8080/dazn5/mono.m3u8
+https://0f9a31ec608836e40fc44bb0c87d87f8.s23-cloudfront-net.lat/8e8e8b142192ea65/pt_eleven5.txt
 #EXTINF:-1 tvg-logo="https://media.slbenfica.pt/-/media/benficadp/images/agora/btv/generic-content/generic-content-mobile.jpg?h=350&w=390&v=638356407330000000&hash=E1217E22077DB7A0ABAFFA1ABC65CEE8" group-title="Desporto",BENFICA TV
 https://1587965fb4d4b5afe8428a4a024feb0d.cazetv.shop/embedtv/3729f546ea44f18a2cdab498367f37c4/file.txt
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_Canal_11_FPF.svg" group-title="Desporto",CANAL 11
